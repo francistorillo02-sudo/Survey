@@ -3,34 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Thank You</title>
-  <style>
-    body{
-      background: url("background2.png") no-repeat center/cover fixed;
-      color:#fff;
-      font-family:sans-serif;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-    }
-
-    form{
-      display:flex;
-      flex-direction:column;
-      gap:14px;
-      align-items:center;
-      margin-top:150px;   /* <-- fixes top clipping */
-    }
-
-    h1{ color:#6b4eff; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="thankyou">
   <h1>🎉 Thank you for submitting the Anime Survey!</h1>
-<form onsubmit="event.preventDefault(); window.location.href='Anime.html';">
- 
-  <button class="submit-btn" type="submit">Survey Again</button>
-</form>
-
+  <button class="back-btn" onclick="window.location.href='Anime.html'">Take Survey Again</button>
 </body>
 </html>
+
